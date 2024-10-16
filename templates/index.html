@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Predictor</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <header class="navbar-container">
+            <div class="navbar-navbar-interactive">
+                <img src="../static/image/logo.jpg" alt="Site Logo" class="navbar-image1">
+                <nav class="navbar-links1">
+                    <span class="thq-link thq-body-small">Home</span>
+                    <span class="thq-link thq-body-small">About</span>
+                    <span class="thq-link thq-body-small">Properties</span>
+                    <span class="thq-link thq-body-small">Contact</span>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="hero-wrapper">
+        <div class="hero-header78">
+            <h1>Find Your Dream Home at the Right Price</h1>
+            <p>Use our tool to estimate home sale prices, search for listings, and make informed decisions.</p>
+            <div class="hero-actions">
+                <button class="thq-button-filled">Get Estimate</button>
+                <button class="thq-button-outline">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="features1-wrapper">
+        <section>
+            <div class="features1-tabs-menu">
+                <div class="features1-tab-horizontal1">
+                    <h2>Price Estimation</h2>
+                    <p>Input your property details to get an estimated sale price.</p>
+                    <form action="/predict" method="POST">
+                        <label for="estimated_value">Estimated Value:</label>
+                        <input type="number" id="estimated_value" name="estimated_value"><br><br>
+                    
+                        <label for="locality">Locality:</label>
+                        <select id="locality" name="locality">
+                            <option value="Bridgeport">Bridgeport</option>
+                            <option value="Waterbury">Waterbury</option>
+                            <option value="Fairfield">Fairfield</option>
+                            <option value="West Hartford">West Hartford</option>
+                            <option value="Greenwich">Greenwich</option>
+                            <option value="Norwalk">Norwalk</option>
+                            <option value="Stamford">Stamford</option>
+                            <option value="Unknown">Unknown</option>
+                        </select><br><br>
+                    
+                        <label for="num_bathrooms">Number of Bathrooms:</label>
+                        <input type="number" id="num_bathrooms" name="num_bathrooms"><br><br>
+                    
+                        <label for="residential">Residential Type:</label>
+                        <select id="residential" name="residential">
+                            <option value="Detached House">Detached House</option>
+                            <option value="Duplex">Duplex</option>
+                            <option value="Triplex">Triplex</option>
+                            <option value="Fourplex">Fourplex</option>
+                            <option value="Unknown">Unknown</option>
+                        </select><br><br>
+                    
+                        <label for="property_tax_rate">Property Tax Rate:</label>
+                        <input type="number" id="property_tax_rate" name="property_tax_rate"><br><br>
+                    
+                        <input type="submit" value="Predict">
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <p>© 2024 House Price Prediction. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

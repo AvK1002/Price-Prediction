@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #ed2a4f;
+    --secondary-color: #698a93;
+    --neutral-light: #FFFFFF;
+    --neutral-dark: #000000;
+    --font-family-main: 'Noto Sans', sans-serif;
+    --font-family-heading: 'STIX Two Text', serif;
+}
+
+body {
+    font-family: var(--font-family-main);
+    background-color: var(--neutral-light);
+    color: var(--neutral-dark);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links1 {
+    display: flex;
+    gap: 20px;
+}
+
+.thq-link {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--neutral-dark);
+    text-decoration: none;
+}
+
+.thq-link:hover {
+    color: var(--primary-color);
+}
+
+.hero-wrapper {
+    padding: 80px 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--neutral-light);
+}
+
+.hero-wrapper h1 {
+    font-family: var(--font-family-heading);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-wrapper p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.thq-button-filled, .thq-button-outline {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.thq-button-filled {
+    background-color: var(--neutral-light);
+    color: var(--primary-color);
+    border: none;
+}
+
+.thq-button-filled:hover {
+    background-color: var(--secondary-color);
+}
+
+.thq-button-outline {
+    background-color: transparent;
+    color: var(--neutral-light);
+    border: 2px solid var(--neutral-light);
+}
+
+.thq-button-outline:hover {
+    background-color: var(--neutral-light);
+    color: var(--primary-color);
+}
+
+.features1-wrapper {
+    background-color: var(--secondary-color);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features1-wrapper h2 {
+    font-family: var(--font-family-heading);
+    font-size: 32px;
+    color: var(--neutral-light);
+    margin-bottom: 20px;
+}
+
+.features1-wrapper p {
+    font-size: 18px;
+    color: var(--neutral-light);
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.thq-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid var(--neutral-dark);
+    border-radius: 4px;
+}
+
+.footer-wrapper {
+    background-color: var(--neutral-dark);
+    color: var(--neutral-light);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.navbar-image1{
+    height: 60px;
+    width: 63px;
+}
