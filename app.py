@@ -54,7 +54,8 @@ def predict():
     # Predict the sale price
     predicted_price = model.predict(input_data_scaled)[0]
 
-    return render_template('result.html', predict = predicted_price)
+    return render_template('result.html', predict=predicted_price)
+
 
 
 if __name__ == '__main__':

@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>House Price Prediction Result</title>
+    <link rel="stylesheet" href="../static/css/result.css">
 </head>
 <body>
-    <h1>Price Prediction : {{predict}}</h1>
+    <div class="container">
+        <div class="result-box">
+            <h1>The Sale Price is:</h1>
+            <div class="price-box">
+                <span class="price">{{ predict }}</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,157 +1,172 @@
+/* -- Root Variables for Colors and Fonts -- */
 :root {
-    --primary-color: #ed2a4f;
-    --secondary-color: #698a93;
-    --neutral-light: #FFFFFF;
-    --neutral-dark: #000000;
-    --font-family-main: 'Noto Sans', sans-serif;
-    --font-family-heading: 'STIX Two Text', serif;
+    --primary-color: #4b2031;            /* Primary color used in backgrounds */
+    --secondary-color: #b42d60;          /* Secondary color used for accents */
+    --neutral-light: #FFFFFF;            /* Light color for backgrounds and text */
+    --neutral-dark: #000000;             /* Dark color for text and borders */
+    --font-family-main: 'Noto Sans', sans-serif;    /* Main font for body text */
+    --font-family-heading: 'STIX Two Text', serif;  /* Font for headings */
 }
 
+/* -- Body and Global Text Styling -- */
 body {
-    font-family: var(--font-family-main);
-    background-color: var(--neutral-light);
-    color: var(--neutral-dark);
+    font-family: var(--font-family-main);  /* Apply main font to the body */
+    background-color: var(--neutral-light);  /* Set background color */
+    color: var(--neutral-dark);             /* Default text color */
     margin: 0;
     padding: 0;
 }
 
+/* -- Navbar (Top Menu) Container -- */
 .navbar-container {
-    width: 100%;
+    width: 100%;                          /* Full width navbar */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between;        /* Space between navbar items */
+    align-items: center;                   /* Align vertically */
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);  /* Semi-transparent background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Slight shadow for navbar */
 }
 
+/* -- Navbar Links -- */
 .navbar-links1 {
     display: flex;
-    gap: 20px;
+    gap: 20px;                             /* Space between the links */
 }
 
 .thq-link {
     cursor: pointer;
     font-weight: bold;
-    text-transform: uppercase;
-    color: var(--neutral-dark);
-    text-decoration: none;
+    text-transform: uppercase;            /* Uppercase for navbar links */
+    color: var(--neutral-dark);           /* Default color for links */
+    text-decoration: none;                /* Remove underline */
 }
 
 .thq-link:hover {
-    color: var(--primary-color);
+    color: var(--primary-color);          /* Color change on hover */
 }
 
+/* -- Hero Section (Intro Area) -- */
 .hero-wrapper {
-    padding: 80px 20px;
-    background-color: var(--primary-color);
+    padding: 80px 20px;                    /* Padding inside the hero section */
+    background-color: var(--primary-color); /* Set primary color for background */
     text-align: center;
-    color: var(--neutral-light);
+    color: var(--neutral-light);           /* Light text color */
 }
 
 .hero-wrapper h1 {
-    font-family: var(--font-family-heading);
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-family: var(--font-family-heading);  /* Stylish heading font */
+    font-size: 48px;                         /* Large font size for the title */
+    margin-bottom: 20px;                     /* Space below the title */
 }
 
 .hero-wrapper p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 20px;                         /* Paragraph text size */
+    margin-bottom: 30px;                     /* Space below the paragraph */
 }
 
+/* -- Hero Actions (Buttons) -- */
 .hero-actions {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px;                               /* Space between action buttons */
 }
 
 .thq-button-filled, .thq-button-outline {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 20px;                      /* Button padding */
+    font-size: 16px;                         /* Button text size */
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 4px;                      /* Rounded corners for buttons */
     font-weight: bold;
 }
 
+/* -- Filled Button (Solid background) -- */
 .thq-button-filled {
-    background-color: var(--neutral-light);
-    color: var(--primary-color);
-    border: none;
+    background-color: var(--neutral-light);  /* Light background */
+    color: var(--primary-color);             /* Dark text */
+    border: none;                            /* No border */
 }
 
 .thq-button-filled:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color); /* Color change on hover */
 }
 
+/* -- Outline Button (Transparent background) -- */
 .thq-button-outline {
     background-color: transparent;
-    color: var(--neutral-light);
-    border: 2px solid var(--neutral-light);
+    color: var(--neutral-light);              /* Light text */
+    border: 2px solid var(--neutral-light);   /* White border */
 }
 
 .thq-button-outline:hover {
-    background-color: var(--neutral-light);
-    color: var(--primary-color);
+    background-color: var(--neutral-light);   /* Background color change on hover */
+    color: var(--primary-color);              /* Text color change on hover */
 }
 
+/* -- Features Section -- */
 .features1-wrapper {
-    background-color: var(--secondary-color);
-    padding: 40px 20px;
+    background-color: var(--secondary-color); /* Secondary color background */
+    padding: 40px 20px;                       /* Padding inside the section */
     text-align: center;
 }
 
 .features1-wrapper h2 {
-    font-family: var(--font-family-heading);
-    font-size: 32px;
-    color: var(--neutral-light);
-    margin-bottom: 20px;
+    font-family: var(--font-family-heading);  /* Stylish font for headings */
+    font-size: 35px;                         /* Large font size */
+    color: var(--neutral-light);             /* Light text color */
+    margin-bottom: 20px;                     /* Space below the heading */
 }
 
 .features1-wrapper p {
-    font-size: 18px;
-    color: var(--neutral-light);
-    margin-bottom: 30px;
+    font-size: 18px;                         /* Text size for paragraph */
+    color: var(--neutral-light);             /* Light text color */
+    margin-bottom: 30px;                     /* Space below the paragraph */
 }
 
+/* -- Form Styling -- */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 10px;                               /* Space between form elements */
 }
 
+/* -- Form Input Fields -- */
 .thq-input {
     padding: 10px;
     width: 100%;
     max-width: 300px;
-    border: 1px solid var(--neutral-dark);
-    border-radius: 4px;
+    border: 1px solid var(--neutral-dark);   /* Dark border for inputs */
+    border-radius: 8px;                      /* Rounded input fields */
 }
 
+/* -- Footer -- */
 .footer-wrapper {
-    background-color: var(--neutral-dark);
-    color: var(--neutral-light);
+    background-color: var(--neutral-dark);   /* Dark background for footer */
+    color: var(--neutral-light);             /* Light text */
     padding: 20px;
     text-align: center;
     font-size: 14px;
 }
 
+/* -- Form Labels -- */
 label {
     display: block;
-    margin-bottom: 5px;
-    color: #555;
+    margin-bottom: 10px;
+    color: #140d46;                          /* Dark purple color for labels */
 }
 
+/* -- Input and Select Fields -- */
 input, select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    border: 1px solid #ccc;                  /* Light grey border for input */
+    border-radius: 20px;                     /* Rounded corners */
+    font-size: 16px;                         /* Text size for inputs */
 }
 
-.navbar-image1{
+/* -- Navbar Logo Image -- */
+.navbar-image1 {
     height: 60px;
-    width: 63px;
+    width: 63px;                             /* Logo dimensions */
 }
