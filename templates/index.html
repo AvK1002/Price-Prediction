@@ -39,7 +39,7 @@
                     <h2>Price Estimation</h2>
                     <p>Input your property details to get an estimated sale price.</p>
                     <form action="/predict" method="POST">
-                        <label for="estimated_value">Estimated Value:</label>
+                        <label for="estimated_value">Estimated Value ($):</label>
                         <input type="number" id="estimated_value" name="estimated_value"><br><br>
                     
                         <label for="locality">Locality:</label>
@@ -66,7 +66,7 @@
                             <option value="Unknown">Unknown</option>
                         </select><br><br>
                     
-                        <label for="property_tax_rate">Property Tax Rate:</label>
+                        <label for="property_tax_rate">Property Tax Rate (%):</label>
                         <input type="number" id="property_tax_rate" name="property_tax_rate"><br><br>
                     
                         <input type="submit" value="Predict">
